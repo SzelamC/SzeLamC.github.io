@@ -12,7 +12,7 @@ const LinkItem: React.FC<LinkItemProps> = ({ to, children }) => {
 
   return (
     <li>
-      <Link to={to} className={`${active ? "bg-teal-500 text-black" : ""} rounded-md p-2 transition-[background-color] duration-500 ease-linear navitem`}>
+      <Link to={to} className={`${active ? "text-orange-400" : ""} rounded-md p-1.5 transition-[color] duration-300 ease-linear navitem`}>
         {children}
       </Link>
     </li>
@@ -21,17 +21,17 @@ const LinkItem: React.FC<LinkItemProps> = ({ to, children }) => {
 
 const Navbar: React.FC = () => {
   return (
-    <nav className="flex justify-center mt-2 mb-4">
-      <div className="w-full max-w-4xl flex text-white justify-around items-center text-2xl">
+    <nav className="flex justify-center py-1 bg-slate-800 sticky top-0 bg-opacity-60 backdrop-blur-sm">
+      <div className="w-full max-w-4xl flex text-white justify-around items-center">
         <div className="basis-1/6 text-center">
           <Link
             to="/"
-            className="inline-block text-3xl hover:scale-125 duration-500 ease-in-out "
+            className="inline-block text-3xl font-bold hover:scale-125 duration-500 ease-in-out "
           >
             Szelam
           </Link>
         </div>
-        <ul className="max-w-xl basis-5/6 flex justify-evenly">
+        <ul className="max-w-xl basis-5/6 flex justify-evenly text-lg">
           <LinkItem to="/aboutme">About Me</LinkItem>
           <LinkItem to="/works">Works</LinkItem>
           <LinkItem to="/github">Github</LinkItem>

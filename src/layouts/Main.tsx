@@ -7,7 +7,7 @@ interface Props {
 
 const Main: React.FC<Props> = ({ children }) => {
   return (
-    <div className="mt-4">
+    <div>
       <Navbar />
       <div>{children}</div>
     </div>
