@@ -21,7 +21,7 @@ const LinkItem: React.FC<LinkItemProps> = ({ to, children }) => {
 
 const Navbar: React.FC = () => {
   return (
-    <nav className="flex justify-center py-1 bg-slate-800 sticky top-0 bg-opacity-60 backdrop-blur-sm">
+    <nav className="flex justify-center py-4 bg-slate-800 sticky top-0 bg-opacity-70 backdrop-blur-[4px]">
       <div className="w-full max-w-4xl flex text-white justify-around items-center">
         <div className="basis-1/6 text-center">
           <Link
@@ -32,8 +32,8 @@ const Navbar: React.FC = () => {
           </Link>
         </div>
         <ul className="max-w-xl basis-5/6 flex justify-evenly text-lg">
+          <LinkItem to="/">Home</LinkItem>
           <LinkItem to="/aboutme">About Me</LinkItem>
-          <LinkItem to="/works">Works</LinkItem>
           <LinkItem to="/github">Github</LinkItem>
         </ul>
       </div>
