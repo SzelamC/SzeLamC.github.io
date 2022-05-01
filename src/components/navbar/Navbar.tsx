@@ -1,3 +1,4 @@
+import MenuButton from "@components/MenuButton";
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
 
@@ -12,7 +13,12 @@ const LinkItem: React.FC<LinkItemProps> = ({ to, children }) => {
 
   return (
     <li>
-      <Link to={to} className={`${active ? "text-orange-400" : ""} rounded-md p-1.5 transition-[color] duration-300 ease-linear navitem`}>
+      <Link
+        to={to}
+        className={`${
+          active ? "text-orange-400" : ""
+        } rounded-md p-1.5 transition-[color] duration-300 ease-linear navitem`}
+      >
         {children}
       </Link>
     </li>
@@ -21,8 +27,8 @@ const LinkItem: React.FC<LinkItemProps> = ({ to, children }) => {
 
 const Navbar: React.FC = () => {
   return (
-    <nav className="flex justify-center py-4 bg-slate-800 sticky top-0 bg-opacity-70 backdrop-blur-[4px]">
-      <div className="w-full max-w-4xl flex text-white justify-around items-center">
+    <nav className="w-full flex justify-center py-4 bg-slate-800 sticky top-0 bg-opacity-70 backdrop-blur-[4px]">
+      <div className="w-4/5 max-w-4xl flex text-white justify-between md:justify-around items-center">
         <div className="basis-1/6 text-center">
           <Link
             to="/"
@@ -31,7 +37,8 @@ const Navbar: React.FC = () => {
             Szelam
           </Link>
         </div>
-        <ul className="max-w-xl basis-5/6 flex justify-evenly text-lg">
+        <MenuButton />
+        <ul className="max-w-xl basis-5/6 hidden md:flex justify-evenly text-lg ">
           <LinkItem to="/">Home</LinkItem>
           <LinkItem to="/aboutme">About Me</LinkItem>
           <LinkItem to="/github">Github</LinkItem>
