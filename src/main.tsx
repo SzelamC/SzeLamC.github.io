@@ -6,9 +6,7 @@ import App from "./App";
 import "./global.css";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
-  // {/* <React.StrictMode> */}
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
-  // </ReacthStrictMode>
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>
 );
