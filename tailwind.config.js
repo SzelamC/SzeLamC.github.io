@@ -18,6 +18,7 @@ module.exports = {
         "menu-fade-in": "fademenu 500ms linear"
       },
     },
+     
   },
   plugins: [],
 };
