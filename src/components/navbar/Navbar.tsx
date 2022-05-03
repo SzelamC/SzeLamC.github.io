@@ -27,7 +27,7 @@ const LinkItem: React.FC<LinkItemProps> = ({ to, children }) => {
 
 const Navbar: React.FC = () => {
   return (
-    <nav className="w-full flex justify-center py-4 bg-slate-800 fixed bg-opacity-70 backdrop-blur-md">
+    <nav className="w-full flex justify-center py-4 bg-slate-800 fixed top-0 bg-opacity-30 backdrop-blur-md">
       <div className="w-4/5 max-w-4xl flex text-white justify-between md:justify-around items-center">
         <div className="basis-1/6 text-center">
           <Link

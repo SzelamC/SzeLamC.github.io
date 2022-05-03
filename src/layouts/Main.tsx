@@ -7,10 +7,10 @@ interface Props {
 
 const Main: React.FC<Props> = ({ children }) => {
   return (
-    <div>
+    <React.Fragment>
       <Navbar />
-      <div>{children}</div>
-    </div>
+      {children}
+    </React.Fragment>
   );
 };
 
