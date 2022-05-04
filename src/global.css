@@ -64,12 +64,13 @@ a {
     top: calc(100% + 1rem);
     transform: translateY(-10px);
     opacity: 0;
+    visibility: hidden;
   }
 
   .dropdown > .dropdown-button:focus + .dropdown-menu {
     opacity: 1;
     transform: translateY(0);
-    pointer-events: auto;
+    visibility: visible;
   }
 
   .glitch {

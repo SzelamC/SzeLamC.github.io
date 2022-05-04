@@ -5,8 +5,8 @@ export const AboutMe: React.FC = () => {
   return (
     <main className="h-full pt-20 flex justify-center">
       <div className="h-full w-full max-w-4xl flex flex-col items-center">
-        <section className="w-full basis-56 mt-20">
-          <h1 className="text-5xl text-orange-300 underline decoration-orange-300 underline-offset-8">
+        <section className="w-full basis-1/5 md:basis-0 mt-20 px-8">
+          <h1 className="text-5xl text-orange-300 text-center md:text-left underline decoration-orange-300 underline-offset-8"> 
             Bio
           </h1>
           <div className="w-full text-white text-2xl pt-5 tracking-wide leading-10">
@@ -20,12 +20,12 @@ export const AboutMe: React.FC = () => {
             </div>
           </div>
         </section>
-        <section className="w-full">
+        <section className="w-full px-8">
           <h1 className="text-5xl text-orange-300 underline decoration-orange-300 underline-offset-8">
             What's my interest
           </h1>
           <div className="pt-5 leading-10">
-            <div className="">
+            <div className="max-w-md md:max-w-lg lg:max-w-2xl">
               <PostTag tagColor="bg-orange-400">Computer Graphics</PostTag>
               <PostTag tagColor="bg-orange-400">Web Development</PostTag>
               <PostTag tagColor="bg-orange-400">Gaming</PostTag>

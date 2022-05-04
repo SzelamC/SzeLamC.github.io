@@ -4,6 +4,5 @@ import tsconfig from "vite-tsconfig-paths";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: "/szelam-personal-website-vite-react-tailwindcss/",
   plugins: [react(), tsconfig()]
 })
