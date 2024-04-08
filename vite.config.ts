@@ -5,5 +5,5 @@ import tsconfig from "vite-tsconfig-paths";
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react(), tsconfig()],
-  base: "//",
+  base: "/my-website/",
 });
