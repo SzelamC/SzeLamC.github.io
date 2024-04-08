@@ -55,7 +55,7 @@ const VoxelGameboy: React.FC<{ className?: string }> = ({ className }) => {
 
       const plane = new THREE.Mesh(
         new THREE.PlaneGeometry(500, 500, 32, 32),
-        new THREE.ShadowMaterial({ opacity: 0.4 })
+        new THREE.ShadowMaterial({ opacity: 0.4 }),
       );
       plane.rotation.x = -Math.PI / 2;
       plane.receiveShadow = true;

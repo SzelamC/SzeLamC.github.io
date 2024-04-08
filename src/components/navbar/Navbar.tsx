@@ -40,7 +40,6 @@ const Navbar: React.FC = () => {
         <MenuButton />
         <ul className="max-w-xl hidden basis-5/6 md:flex justify-evenly text-lg">
           <LinkItem to="/">Home</LinkItem>
-          <LinkItem to="/aboutme">About Me</LinkItem>
           <LinkItem to="/github">Github</LinkItem>
         </ul>
       </div>
